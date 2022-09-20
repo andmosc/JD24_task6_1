@@ -5,11 +5,11 @@ import java.util.List;
 
 public class MainTest {
 
-    private Person person1,person2,person3,person4;
-    private Person person5,person6,person7,person8;
+    private static Person person1,person2,person3,person4;
+    private static Person person5,person6,person7,person8;
 
-    @BeforeEach
-    public void setUp() {
+    @BeforeAll
+    public static void setUp() {
         person1 = new Person("Maria1","Ivanova1",17,Sex.WOMAN,Education.HIGHER);
         person2 = new Person("Maria2","Ivanova2",18,Sex.WOMAN,Education.HIGHER);
         person3 = new Person("Maria3","Ivanova3",26,Sex.WOMAN,Education.ELEMENTARY);
